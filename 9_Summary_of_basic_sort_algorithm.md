@@ -7,4 +7,4 @@
 - Merge Sort: 需要额外的内存开销
 - Heap Sort: 在快的排序算法中相对较慢
 
-[!avatar](/pic/sort_comparison.png)
+<img src="pic/sort_comparison.png">
