@@ -57,5 +57,3 @@ res = top_k(li, k)
 print('top-{}: '.format(k), res)
 end_time = time.time()
 print(end_time - start_time)
-
-print(math.log())

@@ -25,13 +25,15 @@ def maze_path(x1, y1, x2, y2):
             next_node = dir(cur_node[0], cur_node[1])
             if maze[next_node[0]][next_node[1]] == 0:
                 stack.append(next_node)
-                maze[next_node[0]][next_node[1]] == 2
+                maze[next_node[0]][next_node[1]] = 2
                 break 
+        # else下的代码块在while循环正常执行结束了之后就会执行else代码块。否则，不执行。
         else:
             maze[cur_node[0]][cur_node[1]] = 2
             stack.pop()
 
     else:
         print('没有路')
+        return False
 
-maze_path(1, 1, 8, 8)
+maze_path(1, 1, 2, 2)

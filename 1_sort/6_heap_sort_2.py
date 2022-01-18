@@ -4,7 +4,7 @@ import heapq
 nums = list(range(1000))
 random.shuffle(nums)
 print('原始列表: ', nums)
-heapq.heapify(nums)  # 建立堆 (默认是小根堆)
+heapq.heapify(nums)  # 建立堆 (默认是小根堆), 每次pop出堆顶最小的元素
 print('建堆后的列表: ', nums)
 
 for i in range(len(nums)):

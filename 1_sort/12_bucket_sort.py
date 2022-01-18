@@ -10,6 +10,7 @@ def bucket_sort(nums, n=100, max_num=10000):
     for val in nums:
         i = min(val // (max_num // n), n - 1)  # 把数字放在第几个桶，同时考虑超出桶范围的数字放最后一个桶
         buckets[i].append(val)
+        # 新进来的一个数字和前一个数字直接比较大小.
         for j in range(len(buckets[i]) - 1, 0, -1):
             if buckets[i][j] < buckets[i][j - 1]:
                 buckets[i][j], buckets[i][j - 1] = buckets[i][j - 1], buckets[i][j]

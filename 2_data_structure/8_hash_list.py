@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@File:Basic_Data_Structure_Alogorithm_Bilibili-PyCharm-21_hash_list.py
+@File:Basic_Data_Structure_Alogorithm_Bilibili-PyCharm-8_hash_list.py
 @Date: 28/9/21
 @Author: Yubo Sun
 @E-mail: tyriongump@gmail.com

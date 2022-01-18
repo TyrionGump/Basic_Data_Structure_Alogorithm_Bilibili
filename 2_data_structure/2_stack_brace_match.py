@@ -27,6 +27,7 @@ def brace_match(s):
         else:
             if stack.is_empty():  # 说明右括号没有和它匹配的左括号
                 return False
+            # 当前右括号要和离它左侧最近最近的括号匹配
             elif stack.get_top() == match[ch]:
                 stack.pop()
             else:

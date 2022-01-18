@@ -22,9 +22,9 @@ def shift(nums, low, high):
     j = 2 * i + 1  # j 指向左子节点
     tmp = nums[i]  # 把堆顶存下来
     while j <= high:
-        if j + 1 <= high and nums[j + 1] > nums[j]:
+        if j + 1 <= high and nums[j + 1] > nums[j]:  # 两个子孩子先比大小
             j = j + 1  # j 指向右子节点
-        if nums[j] > tmp:
+        if nums[j] > tmp:  # 子节点中更大的那个和根结点比较
             nums[i] = nums[j]
             i = j
             j = 2 * i + 1
@@ -39,7 +39,7 @@ def heap_sort(nums):
     n = len(nums)
 
     # 建立堆
-    for i in range((n-2)//2, -1, -1):
+    for i in range((n-2)//2, -1, -1):  # n-1 是最后一定叶节点的索引, (n-2) // 2 是最后一个堆的堆顶索引
         shift(nums, i, n-1)
 
     # 每次把堆顶（该堆最大的数）和堆的最后一个数字交换. 然后再次调整.
